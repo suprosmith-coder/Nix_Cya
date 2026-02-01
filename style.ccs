@@ -1,0 +1,78 @@
+/* Cyanix AI High-Tech Theme */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0a0a0a;
+    color: #00ffff;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+button {
+    background-color: #000;
+    color: #00ffff;
+    border: 1px solid #00ffff;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #00ffff;
+    color: #000;
+}
+
+.chat-section {
+    margin-top: 20px;
+    border: 1px solid #00ffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#chat-box {
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #00ffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+.model-select {
+    margin-bottom: 10px;
+}
+
+.image-section {
+    margin-top: 20px;
+    border: 1px solid #00ffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#image-output img {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #00ffff;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyanix AI</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cyanix AI</h1>
+            <div id="auth-buttons">
+                <button id="email-login">Email Sign In</button>
+                <button id="google-login">Google Sign In</button>
+            </div>
+        </header>
+
+        <section class="chat-section">
+            <div class="model-select">
+                <label>Select AI Model:</label>
+                <select id="ai-model">
+                    <option value="synix">Synix</option>
+                    <option value="axion">Axion</option>
+                    <option value="nexis">Nexis (Premium)</option>
+                </select>
+            </div>
+
+            <div id="chat-box"></div>
+
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-btn">Send</button>
+                <input type="file" id="file-input" style="display:none">
+                <button id="attach-btn">Attach File</button>
+            </div>
+        </section>
+
+        <section class="image-section">
+            <input type="text" id="image-prompt" placeholder="Describe an image...">
+            <button id="generate-image">Generate Image</button>
+            <div id="image-output"></div>
+        </section>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
